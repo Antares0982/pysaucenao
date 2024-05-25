@@ -22,7 +22,6 @@ setup(
         keywords=['saucenao', 'anime', 'artwork'],  # Keywords that define your package best
         install_requires=[
             'aiohttp',
-            'aiohttp_proxy',
         ],
         classifiers=[
             'Development Status :: 5 - Production/Stable',

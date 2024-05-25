@@ -1,8 +1,11 @@
 import io
 from typing import *
 
-from aiohttp_proxy import ProxyConnector
-
+try:
+    from aiohttp_proxy import ProxyConnector
+except ImportError:
+    def ProxyConnector():
+        raise ImportError("aiohttp_proxy is not installed. Please install it to use the proxy feature.")
 from pysaucenao.containers import *
 from pysaucenao.errors import *
 
